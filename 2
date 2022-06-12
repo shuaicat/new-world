@@ -1,0 +1,83 @@
+//char //字符数据型 char shot int long long long float double
+//short //短整型 
+//int //整型 
+//long //长整型 
+//long long //更长的整型 
+//float //单精度浮点型 
+//double //双精度浮点型 
+
+//%c 打印字符格式的数据 
+//%d 打印整型十进制的数据 %d
+//%f 打印浮点型——打小数 
+//%p 打印地址形式 
+
+
+//int main()
+//{
+//	//char ch='A';//内存
+//	//printf("%c\n",ch);//%c打印字符的格式数据
+//	//int age=24;
+//	//printf("%d\n",age);//打印整型十进制数据
+//	//shot int
+//    //long num=100;//长整型
+//    //printf("%d\n",num);
+//	//float g=5.0;//浮点型，显示后五位小数点
+//	//printf("%f\n",g);
+//	double a=5.24414;
+//printf("%f\n",a);显示小数点后6位，注意显示为%f。
+//return 0;
+//}
+//	//不同数据类型，对应内存空间不同，对应数值对应类型，节省空间
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//printf("%d\n",sizeof(char));//1 一个字节=8个bite位，能表示2^8个数。
+//printf("%d\n",sizeof(short));//2 两个字节
+//printf("%d\n",sizeof(int));//4
+//printf("%d\n",sizeof(long));//4/8
+//printf("%d\n",sizeof(long long));//8/16
+//printf("%d\n",sizeof(float));//4
+//printf("%d\n",sizeof(double));//8
+//return 0;
+//}
+
+//int num1 = 100;//全局变量-定义代码块{}之外的变量
+//int main()
+//{
+//int num2 = 200;//局部变量-定义代码块{}之内的变量
+//	//局部变量和全局变量名称最好不要相同，易产生BUG
+//	//局部变量和全局变量同时出现，先显示局部变量
+//	//局部变量无法被局部之外使用
+//return 0;
+//}
+
+//int main()
+//{
+//int num1=0;
+//int num2=0;
+////输入数据-使用输入函数
+//scanf("%d%d",&num1,&num2);//取地址符号&
+//int sum = 0;//C语言语法规定，变量定义要定义在代码块最前面。 
+//sum=num1+num2;
+//printf("sum=%d\n",sum);//sum=%d只是输出时带上”sum=“这几个字符。
+//}
+
+
+
+//int main()
+//{
+//extern int sum;//声明sum，没有这个声明会报错，sum未声明
+//printf("sum=%d\n",sum);//sum在其他源文件里
+//}
+
+#include<stdio.h>
+//int main()
+//{
+//	double a=5.24414;
+//printf("%f\n",a);
+//return 0;
+//}
