@@ -1,0 +1,84 @@
+#include<stdio.h>
+
+//int main()
+//{
+//	float num1=0;
+//	int num2=0;
+//	float sum=0;
+//	scanf("%f%d",&num1,&num2);
+//
+//	sum=num1+num2;
+//	printf("sum=%f\n",sum);
+//
+//	return 0;
+//}//上节课复习
+
+//int main（）
+//{
+//	  3;//字面常量
+//	  3.25;//字面常量
+//    int num=4;//把4赋予num，可以被改变。
+//	  num=8；//可以改变 int num=4
+//	  const int num=4//const修饰的“常变量”,无法被其他数改变
+//    return 0;
+//}
+
+
+//#define MAX 10//#define 定义的常量,注意没有分号【；】
+//int main()
+//{
+//	int arr[MAX]={0};
+//	printf("%d\n",MAX);
+//return 0;
+//}
+
+//enum Color//注意没有分号
+//{
+//RED,
+//BLUE,
+//YELLOW
+//};//注意有分号
+//int main()
+//{
+//	enum Color COLOR=RED;//第2 color为一个变量，颜色红黄为常量
+//	printf("%d\n",RED);
+//	printf("%d\n",BLUE);
+//	printf("%d\n",YELLOW);
+//	return 0;
+//} 
+//
+//#include<stdio.h>
+//int main()
+//{
+//	char arr1[]="abc";//双引号定义数组,'a','b','c',\0.
+//	//\0是字符串的结束标志
+//	char arr2[]={'a','b','c'};
+//	char arr3[]={'a','b','c',0};
+//	printf("%s\n",arr1);
+//	printf("%s\n",arr2);
+//	printf("%s\n",arr3);
+//	printf("%d\n",strlen(arr1));
+//	printf("%d\n",strlen(arr2));
+//	printf("%d\n",strlen(arr3));//strlen string length 字符串长度
+//	//strlen string length 字符串长度
+//	//strlen string length 字符串长度
+//	//a b c % &等等都有自己在计算机储存的值
+//	//如a-97 A-65 这就是ASCII码
+//
+//	return 0;
+//}
+//int main()
+//{
+//	printf("abcn");
+//	printf("abc\n");
+//	printf("abc\\n");
+//
+//	return 0;
+//}
+
+int main()
+{
+	printf("%c\n",'\132');
+	return 0;
+
+}
