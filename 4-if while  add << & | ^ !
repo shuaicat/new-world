@@ -1,0 +1,77 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>;
+
+//int main()
+//{
+//	int study=0;
+//	printf("要不要好好学习？（1/0）:");
+//		scanf("%d",&study);//扫描地址
+//	if(study==1)
+//	{
+//		printf("考清华\n");
+//	}//如果地址study全等于1.输出考清华
+//	else
+//	{
+//	printf("烤地瓜\n");
+//	}//如果地址是其余，输出考地瓜
+//	return 0;
+//	
+//}
+//int Add(int x,int y)
+//{
+//	int z = x + y;
+//	return z;//返回到z中。
+//}//设置函数
+//int main()
+//{
+//	int num1=10;
+//	int num2=20;
+//	int sum=0;
+//	//sum = num1 + num2;//原始方式
+//	sum=Add(num1,num2);//sum等于z，z=x+y，x对应num1，y对应num2；
+//	printf("%d\n",sum);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int line = 0;
+//	printf("没钱，怎么办\n");
+//	
+//	while(line<200)
+//	{
+//		printf("买彩票，没中:%d\n",line);
+//			line++;
+//
+//	}
+//	if(line>=200)
+//		printf("中奖，起飞\n");
+//}
+
+//int main()
+//{
+//	int a = 1;//将1 放入整型a中，整型4字节，32bite位。
+//	//0000 0000 0000 0000 0000 0000 0000 0001
+//	int b = a<<1;//左移1位，就是0000.... 0000 0010，那就是2
+//	int c= a<<2;//左移2位，就是000 0000  0100，那就是4
+//	printf("%d\n",a);
+//	printf("%d\n",b);
+////	printf("%d\n",c);
+////
+////}
+//
+////&按位与
+////1竖杆 按位或
+////^ 按位异或
+////1 0 1
+////0 1 1
+//与是001是001有0为0  或是111有1选1 异或是110对应二进制位相同则为0
+//	0为假 非0为真
+int main()
+{
+	int a = 2;
+	printf("%d\n",a);
+	printf("%d\n",!a);
+
+}
