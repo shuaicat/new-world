@@ -1,0 +1,54 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+#include<string.h>
+//int main()
+//{
+//	int a = 10;//占用4个字节
+//	printf("%p\n",&a);
+//	int*p=&a;
+//	*p=20;//*解引用操作符 间接引用操作符 *p使用p内的地址 就是a
+//	return 0;
+//}
+
+//struct man
+//{
+//	char name[10];//胡群驿
+//	short  height;//190
+//};
+//int main()
+//{
+//	struct man a={"胡群驿",190};
+//	struct man* b=&a;
+//	printf("%s\n",(*b).name);//取b地址就是a，a.name就是胡群驿。
+//	printf("%s\n",b->name);//a的指针指向name
+//	printf("%s\n",a.name);//%s打印字符串 a.name 男人a的名字
+//	                      //.结构体变量 成员
+//	                      //->结构体指针 成员
+//	printf("%d\n",a.height);//%d打印整型 a.height 男人a的身高
+//	//printf("%d\n",strlen(a.name));
+//	//printf("%d\n",sizeof(a.name));
+//	//return 0;
+//	a.height=200;
+//	strcpy(a.name,"夏雷");
+//	printf("%d\n",a.height);//%d打印整型 a.height 男人a的身高
+//	printf("%s\n",a.name);
+//}
+struct book 
+{
+	char name[20];
+	int pirce;
+};
+int main()
+{
+	struct book a={"时光倒流的女孩",59};
+	struct book* b=&a;
+		printf("%s\n",(*b).name);
+		printf("%d\n",b->pirce);
+		strcpy (a.name,"格林童话");
+		(*b).pirce=60;
+		printf("%s\n",a.name);
+		printf("%d\n",b->pirce);
+
+	return 0;
+}
