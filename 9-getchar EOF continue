@@ -1,0 +1,56 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+//int main()
+//{
+//	int ch =0; 
+//	//EOF -end of file 文件结束标志
+//	while(ch=getchar() !=EOF)
+//	{
+//		putchar(ch);
+//	}//输入^z 就是EOF就能结束
+//	return 0;
+//}//输入什么 打出什么 1 1    2 2 
+
+
+//int main()
+//{
+//int ret =0;
+//int ch = 0;
+//char password[20]={0};
+//printf("请输入密码：");
+//scanf("%s",password);//输入 只会读取一个字符串 空格后不会读取
+////在scanf 和 printf需要输入两次时 第一次123456按回车
+////缓冲区就存在一个’\n‘，getchar（）采集\n 十进制显示就是10
+////error getchar() 这样也不行，如果输入完密码按空格可以， 但后面还有 ABCD等陈杂字符还是采集不到Y/N，直接失败
+////error  什么都不写 缓冲区就会采集10 就是\n，导致“请确认”不等待，直接显示确认失败
+//while (ch=getchar()!='\n')
+//{ 
+//	;
+//}//循环采集 不断把文件缓冲区采集，直到采集完所有。“请确认”开始等待输入
+//printf("请确认：（Y/N）");
+//ret=getchar();
+//if(ret=='Y')	
+//{
+//	printf("确认成功");
+//}
+//else
+//	printf("确认失败");
+//}
+ 
+
+//int main()
+//{
+//	int a =0;
+//	while((a=getchar())!= EOF)
+//{
+//	if(a<'5'||a>'8')
+//		continue;
+//	putchar(a);
+//	}
+//	return 0;
+//}//输入5-8 可以输出
+
+//for循环使用最多。while 初始化 判断 条件 离得比较远，容易出问题
+//int a =0;初始化 while（i<5）判断  i++ 条件
+//for（int a，i<5,i++）
