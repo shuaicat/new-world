@@ -1,0 +1,84 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+
+//int main()
+//{
+//	int a= 0;
+//	for(a = 1;a <= 9;a++)
+//	{
+//		printf("%d\n",a);
+//	}
+//	return 0;
+//} 
+//int main()
+//{
+//	int a= 1;
+//	while(a <= 9)
+//	{
+//		printf("%d\n",a);
+//		a++;
+//	}
+//	return 0;
+//} 
+//不可在for循环改变变量，防止循环失去控制
+//最好前闭后开的写法，仅是建议
+
+
+//for循环变种1
+//int main()
+//{
+//	for(;;)//判断部分省略就是恒为真；
+//	{
+//		printf("hh");
+//	}
+//	return 0;
+//}
+
+ //int main()
+ //{
+	// int a =0;
+	// int b= 0;
+	// for(;a<5;a++)
+	//	 for(;b<5;b++)
+	//		 {
+	//			 printf("hh\n");
+	// }
+	// return 0;
+ //}//只能循环五次，打印五个hh。因为b循环结束不会重置为0
+
+
+//题计算n的阶乘
+//int main()
+//{
+//	int n=0;
+//	int a=0;
+//	int b=1;
+//	scanf("%d",&n);//要注意整型储存位置
+//	for(a=1;a<=n;a++)
+//	{
+//		b=b*a;
+//	}
+//	printf("%d\n",b);
+//	return 0;
+//}
+
+//n阶乘累加
+int main()
+{
+	int n=0;
+	int a=0;
+	int b=1;
+	int sum =0;
+	for(n=1;n<=3;n++)
+	{
+	int b=1;
+	for(a=1;a<=n;a++)
+	{
+		b=b*a;
+	}
+	sum=sum+b;
+	}
+	printf("sum= %d\n",sum);
+	return 0;
+}//注意for函数里面重置b=1
